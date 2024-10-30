@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using order_service_lambda.Model;
+﻿using Ecommerce.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 using order_service_lambda.Service;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -29,13 +29,13 @@ namespace order_service_lambda.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] OrderModel orderModel)
+        public async Task<ActionResult> Post([FromBody] Order orderModel)
         {
             return Ok(await orderService.Post(orderModel));
         }
 
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] OrderModel orderModel)
+        public async Task<ActionResult> Put([FromBody] Order orderModel)
         {
             return Ok(await orderService.Put(orderModel));
         }

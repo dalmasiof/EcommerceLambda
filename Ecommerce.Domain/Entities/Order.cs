@@ -1,6 +1,6 @@
-﻿namespace order_service_lambda.Model
+﻿namespace Ecommerce.Domain.Entities
 {
-    public class OrderModel
+    public class Order
     {
         public required string Guid { get; set; }
         public  string CostumerDocument => Costumer.Document;

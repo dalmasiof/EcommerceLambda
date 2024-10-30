@@ -1,7 +1,5 @@
 ﻿using Amazon.SQS;
 using Amazon.SQS.Model;
-using order_service_lambda.Model;
-using order_service_lambda.Service;
 
 namespace order_service_lambda.MessageService
 {

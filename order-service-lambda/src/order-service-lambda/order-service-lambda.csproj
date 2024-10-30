@@ -15,4 +15,7 @@
     <PackageReference Include="AWSSDK.SQS" Version="3.7.400.42" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Ecommerce.Domain\Ecommerce.Domain.csproj" />
+  </ItemGroup>
 </Project>

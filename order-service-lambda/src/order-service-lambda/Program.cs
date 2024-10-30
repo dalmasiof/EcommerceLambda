@@ -17,7 +17,6 @@ builder.Services.AddScoped<IOrderMessageService, OrderMessageService>();
 
 var app = builder.Build();
 
-
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

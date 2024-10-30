@@ -1,6 +1,6 @@
 ﻿using order_service_lambda.MessageService;
-using order_service_lambda.Model;
 using Newtonsoft.Json;
+using Ecommerce.Domain.Entities;
 
 namespace order_service_lambda.Service
 {
@@ -18,23 +18,23 @@ namespace order_service_lambda.Service
             throw new NotImplementedException();
         }
 
-        public Task<OrderModel> Get(string guid)
+        public Task<Order> Get(string guid)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<OrderModel>> GetList()
+        public Task<IEnumerable<Order>> GetList()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<bool> Post(OrderModel order)
+        public async Task<bool> Post(Order order)
         {
             var stringMessage = JsonConvert.SerializeObject(order);
             return await orderMessageService.SendMessage(stringMessage);
         }
 
-        public Task<bool> Put(OrderModel order)
+        public Task<bool> Put(Order order)
         {
             throw new NotImplementedException();
         }

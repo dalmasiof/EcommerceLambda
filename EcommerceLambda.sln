@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "approve-order-lambda", "approve-order-lambda\src\approve-order-lambda\approve-order-lambda.csproj", "{0BEE686C-72F1-4B52-8F44-4DDC460E8E1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "order-service-lambda", "order-service-lambda\src\order-service-lambda\order-service-lambda.csproj", "{EDA9735A-EB3A-49EC-849C-B1504A2DD3FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "order-service-lambda", "order-service-lambda\src\order-service-lambda\order-service-lambda.csproj", "{EDA9735A-EB3A-49EC-849C-B1504A2DD3FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Domain", "Ecommerce.Domain\Ecommerce.Domain.csproj", "{CF75CE2E-2972-40EE-9475-AC15FA6C677F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EDA9735A-EB3A-49EC-849C-B1504A2DD3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDA9735A-EB3A-49EC-849C-B1504A2DD3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDA9735A-EB3A-49EC-849C-B1504A2DD3FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF75CE2E-2972-40EE-9475-AC15FA6C677F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF75CE2E-2972-40EE-9475-AC15FA6C677F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF75CE2E-2972-40EE-9475-AC15FA6C677F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF75CE2E-2972-40EE-9475-AC15FA6C677F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿namespace order_service_lambda.Model
+﻿namespace Ecommerce.Domain.Entities
 {
     public class Costumer
     {
