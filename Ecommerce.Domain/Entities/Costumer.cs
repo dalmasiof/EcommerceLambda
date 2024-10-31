@@ -1,4 +1,6 @@
-﻿namespace Ecommerce.Domain.Entities
+﻿using System.Net.Sockets;
+
+namespace Ecommerce.Domain.Entities
 {
     public class Costumer
     {
@@ -7,5 +9,6 @@
         public required string Name { get; set; }
         public string? Email { get; set; }
         public string? PhoneNumber { get; set; }
+        public Address? Addres { get; set; }
     }
 }
