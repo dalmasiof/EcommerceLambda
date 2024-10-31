@@ -16,8 +16,7 @@ namespace Ecommerce.Domain.Entities
                 this.CostumerDocument = value; 
             }
         }
-        [DynamoDBHashKey(typeof(DybnamoDbEnumStringConverter<StatusOrderEnum>))]
-        public StatusOrderEnum StatusOrder { get; set; }
+        public string StatusOrder { get; set; }
         public Costumer Costumer { get; set; }
         public decimal Total => OrderItens.Sum(x => x.Price);
         public List<OrderItem> OrderItens { get; set; }

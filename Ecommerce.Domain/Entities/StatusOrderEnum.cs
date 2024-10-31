@@ -3,6 +3,7 @@
     public enum StatusOrderEnum
     {
         AWAITING_PAYMENT,
-        AWAITING_SEND
+        AWAITING_SEND,
+        PAYED
     }
 }
